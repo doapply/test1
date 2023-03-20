@@ -1,11 +1,11 @@
 name: Create tag
 on:
   pull_request:
-    branches:
-      - main
+  branches:
+    - main
 jobs:
- - name: Convert JSON to CSV using YML
-   uses: your-username/convert-json-to-csv-yml@v1.0.0
-   with:
-      json-file: 'test.json'
-      csv-file: 'path/to/output.csv'
+- name: Convert JSON to CSV using YML
+  uses: doapply/convert-json-to-csv-yml@v1.0.0
+  with:
+    json-file: 'test.json'
+    csv-file: 'path/to/output.csv'
